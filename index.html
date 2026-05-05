@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Kyle Emler's WDD-231 Course Home Page - Exploring web design and development">
+    <meta name="author" content="Kyle Emler">
+    <title>Kyle Emler - WDD 231 Course Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
+
 <body>
-    Kyle Emler
+    <header>
+        <div class="header-content">
+            <!-- Logo SVG will go here -->
+            <span class="site-name">Kyle Emler</span>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Massa Facilisis Per Purus Si Imperdiet Curae Amet. Et Fames Loreum Mi Phasellus Congue Nascetur Etui
+                    Consectetur Sociosqu Natoque Risus. Odio Vehicula Libero Nisl Viverra Augue Commodo Pretium Vivamus
+                    At Duis Magna. Quam Fringilla Convallis Ridiculus Milesua Accumsan Peterit Magnis Volutpat Nulla
+                    Mauris. Dis Maecenas Et Priasum Class Fringilla.</p>
+            </div>
+            <div class="student-photo-container">
+                <div class="student-photo"></div>
+                <p class="photo-label">Student Photo</p>
+            </div>
+        </section>
+
+        <section id="courses-section" class="courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-courses" class="filter-btn active">All</button>
+                <button id="cse-courses" class="filter-btn">CSE</button>
+                <button id="wdd-courses" class="filter-btn">WDD</button>
+            </div>
+            <div id="courses-container" class="courses-container">
+                <!-- Course cards will be populated here by JavaScript -->
+            </div>
+            <p id="credits-total">The total credits for courses listed above is <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p id="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+            <p>&copy; <span id="year"></span> Kyle Emler | United States</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
+
 </html>
