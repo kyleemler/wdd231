@@ -11,7 +11,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -24,7 +24,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -36,7 +36,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -62,7 +62,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize course display
     displayCourses(courses);
     updateCreditsTotal(courses);
+    updateCompletedCredits();
 
     // Set up filter buttons
     const allCoursesBtn = document.getElementById('all-courses');
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateActiveButton(this);
         displayCourses(courses);
         updateCreditsTotal(courses);
+        updateCompletedCredits();
     });
 
     wddCoursesBtn.addEventListener('click', function () {
@@ -105,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const filtered = courses.filter(course => course.subject === 'WDD');
         displayCourses(filtered);
         updateCreditsTotal(filtered);
+        updateCompletedCredits();
     });
 
     cseCoursesBtn.addEventListener('click', function () {
@@ -113,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const filtered = courses.filter(course => course.subject === 'CSE');
         displayCourses(filtered);
         updateCreditsTotal(filtered);
+        updateCompletedCredits();
     });
 });
 
@@ -158,4 +162,10 @@ function updateActiveButton(activeButton) {
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
     activeButton.classList.add('active');
+}
+
+function updateCompletedCredits() {
+    const completedCourses = courses.filter(course => course.completed === true);
+    const completedCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
+    document.getElementById('completed-credits').textContent = completedCredits;
 }

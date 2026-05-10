@@ -2,6 +2,17 @@
 
 /* Tablet and up (768px) */
 @media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .header-content {
+        padding: 1rem 1.25rem;
+    }
+
     .menu-toggle {
         display: none;
     }
@@ -10,6 +21,7 @@
         max-height: none;
         background-color: transparent;
         margin-bottom: 0;
+        flex: 1;
     }
 
     .nav-menu ul {
@@ -78,7 +90,7 @@
     .student-photo {
         width: 100%;
         aspect-ratio: 4 / 3;
-        background-color: #999;
+        object-fit: cover;
         border-radius: 4px;
     }
 
