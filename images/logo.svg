@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#e74c3c" stroke="#ffffff" stroke-width="2"/>
+  <!-- KSE text -->
+  <text x="30" y="38" font-family="Open Sans, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">KSE</text>
+</svg>
