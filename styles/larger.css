@@ -1,6 +1,4 @@
-/* Responsive Design - Larger Screens */
 
-/* Tablet and up (768px) */
 @media (min-width: 768px) {
     header {
         display: flex;
