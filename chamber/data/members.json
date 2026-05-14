@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Placeholder 1",
+        "address": "Placeholder Address 1",
+        "phone": "(000) 000-0001",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 3,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 2",
+        "address": "Placeholder Address 2",
+        "phone": "(000) 000-0002",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 2,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 3",
+        "address": "Placeholder Address 3",
+        "phone": "(000) 000-0003",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 2,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 4",
+        "address": "Placeholder Address 4",
+        "phone": "(000) 000-0004",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 1,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 5",
+        "address": "Placeholder Address 5",
+        "phone": "(000) 000-0005",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 3,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 6",
+        "address": "Placeholder Address 6",
+        "phone": "(000) 000-0006",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 1,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 7",
+        "address": "Placeholder Address 7",
+        "phone": "(000) 000-0007",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 2,
+        "description": "Placeholder business description."
+    },
+    {
+        "name": "Placeholder 8",
+        "address": "Placeholder Address 8",
+        "phone": "(000) 000-0008",
+        "website": "https://example.com",
+        "image": "placeholder-view-vector.svg",
+        "membershipLevel": 1,
+        "description": "Placeholder business description."
+    }
+]

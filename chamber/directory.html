@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business directory for the Broken Arrow Chamber of Commerce in Broken Arrow, Oklahoma.">
+    <meta name="author" content="Kylee Emler">
+
+    <meta property="og:title" content="Broken Arrow Chamber of Commerce Directory">
+    <meta property="og:description" content="Find local Broken Arrow businesses, services, restaurants, and community partners.">
+    <meta property="og:image" content="https://kyleeemler.github.io/wdd231/chamber/images/broken-arrow-logo.svg">
+    <meta property="og:url" content="https://kyleeemler.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <title>Broken Arrow Chamber of Commerce Directory</title>
+    <link rel="icon" href="images/broken-arrow-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="directory.html" aria-label="Broken Arrow Chamber home">
+                <img src="images/broken-arrow-logo.svg" alt="" width="160" height="50">
+                <span>
+                    <strong>Broken Arrow</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div>
+                <p class="eyebrow">Broken Arrow, Oklahoma</p>
+                <h1>Business Directory</h1>
+                <p>Connect with local shops, restaurants, services, and community partners across Broken Arrow.</p>
+            </div>
+        </section>
+
+        <section class="directory-tools" aria-label="Directory display options">
+            <h2>Members</h2>
+            <div class="view-buttons">
+                <button id="grid-view" class="view-button active" type="button" aria-pressed="true">Grid</button>
+                <button id="list-view" class="view-button" type="button" aria-pressed="false">List</button>
+            </div>
+        </section>
+
+        <section id="member-directory" class="member-directory grid-view" aria-live="polite"></section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <section>
+                <h2>Broken Arrow Chamber of Commerce</h2>
+                <p>123 Main Street<br>Broken Arrow, OK 74012</p>
+                <p><a href="mailto:info@bachamber.example">info@bachamber.example</a><br><a href="tel:+19185551234">(918) 555-1234</a></p>
+            </section>
+            <section class="social-links" aria-label="Social media links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
+            </section>
+            <section>
+                <p>WDD 231 Chamber Project</p>
+                <p>Kylee Emler</p>
+                <p>&copy; <span id="current-year"></span> Broken Arrow Chamber</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
