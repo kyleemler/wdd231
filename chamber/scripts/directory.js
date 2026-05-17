@@ -1,5 +1,5 @@
 const menuButton = document.querySelector("#menu-button");
-const primaryNav = document.querySelector("#primary-nav");
+const primaryNav = document.querySelector("nav");
 const directory = document.querySelector("#member-directory");
 const gridButton = document.querySelector("#grid-view");
 const listButton = document.querySelector("#list-view");
