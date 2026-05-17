@@ -1,65 +1,65 @@
 [
     {
-        "name": "Placeholder 1",
-        "address": "Coming soon",
-        "phone": "(000) 000-0001",
-        "website": "",
-        "image": "placeholder-view-vector.jpg",
+        "name": "SEK Esthetics",
+        "address": "804 S 9th St Ste C, Broken Arrow, OK 74012",
+        "phone": "(918) 344-7959",
+        "website": "https://sekesthetics.com",
+        "image": "sek-esthetics.jpg",
         "membershipLevel": 3,
-        "description": "This listing will be updated with a local business once details are ready."
+        "description": "Spa collective offering a variety of spa services and rooms available for rent."
     },
     {
-        "name": "Broken Arrow Bike Shop",
-        "address": "102 S Main St, Broken Arrow, OK 74012",
-        "phone": "(918) 555-2101",
-        "website": "",
+        "name": "Spoke House Bicycles",
+        "address": "224 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 619-6222",
+        "website": "https://www.facebook.com/SpokeHouse",
         "image": "broken-arrow-bike-shop.jpg",
         "membershipLevel": 2,
-        "description": "Full-service bike repair, rentals, and cycling gear for Broken Arrow riders."
+        "description": "Local bicycle shop serving riders in the Rose District."
     },
     {
-        "name": "Redbud Floral & Gifts",
-        "address": "314 S Main St, Broken Arrow, OK 74012",
-        "phone": "(918) 555-2205",
-        "website": "",
+        "name": "Arrow Flowers & Gifts",
+        "address": "213 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 251-7484",
+        "website": "https://www.arrowflowersandgifts.com/",
         "image": "redbud-floral-and-gifts.jpg",
         "membershipLevel": 3,
-        "description": "Fresh floral arrangements, gifts, and seasonal décor for every occasion."
+        "description": "Fresh floral arrangements, gifts, and local delivery for special occasions."
     },
     {
-        "name": "Riverwalk Books",
-        "address": "402 S Main St, Broken Arrow, OK 74012",
-        "phone": "(918) 555-2307",
-        "website": "",
+        "name": "Book and Bloom",
+        "address": "115 E Dallas St, Broken Arrow, OK 74012",
+        "phone": "(918) 957-5153",
+        "website": "https://www.bookandbloomba.com/",
         "image": "riverwalk-books.jpg",
         "membershipLevel": 2,
-        "description": "Independent bookstore with a curated selection of local favorites and bestsellers."
+        "description": "Community-focused shop offering books, flowers, and local events."
     },
     {
-        "name": "Broken Arrow Barber",
-        "address": "208 N Main St, Broken Arrow, OK 74012",
-        "phone": "(918) 555-2411",
-        "website": "",
+        "name": "Broken Arrow Barber Co.",
+        "address": "1601 S Main St Ste B, Broken Arrow, OK 74012",
+        "phone": "(918) 994-6352",
+        "website": "https://www.babarberco.com/",
         "image": "broken-arrow-barber.jpg",
         "membershipLevel": 1,
-        "description": "Classic barber services with a modern touch, including cuts, shaves, and styling."
+        "description": "Collective of independent barbers offering classic and modern barber services."
     },
     {
-        "name": "Broken Arrow Realty",
-        "address": "520 W Houston St, Broken Arrow, OK 74012",
-        "phone": "(918) 555-2818",
-        "website": "",
+        "name": "McGraw Realtors",
+        "address": "524 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 592-6000",
+        "website": "https://www.mcgrawrealtors.com/",
         "image": "broken-arrow-realty.jpg",
         "membershipLevel": 3,
-        "description": "Local real estate experts helping buyers and sellers across Broken Arrow neighborhoods."
+        "description": "Real estate office helping buyers and sellers in Broken Arrow and surrounding areas."
     },
     {
-        "name": "Broken Arrow Event Co.",
-        "address": "118 E Broadway St, Broken Arrow, OK 74012",
-        "phone": "(918) 555-2525",
-        "website": "",
+        "name": "The Rose Event Center",
+        "address": "808 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 230-7660",
+        "website": "https://theroseeventcenter.com/",
         "image": "broken-arrow-event-co.jpg",
         "membershipLevel": 2,
-        "description": "Event planning, rentals, and coordination for weddings, corporate events, and celebrations."
+        "description": "Event venue hosting weddings, parties, and community celebrations."
     }
 ]

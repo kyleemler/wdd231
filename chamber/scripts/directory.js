@@ -31,11 +31,14 @@ function createMemberCard(member) {
     const card = document.createElement("article");
     card.classList.add("member-card");
 
-    const websiteLink = member.website ? `<a class="member-link" href="${member.website}" target="_blank" rel="noopener">Visit Website</a>` : "";
+    let websiteLink = "";
+    if (member.website) {
+        websiteLink = `<a class="member-link" href="${member.website}" target="_blank" rel="noopener">Visit Website</a>`;
+    }
 
     card.innerHTML = `
         <figure class="member-figure">
-            <img src="images/${member.image}" alt="Placeholder image for ${member.name}" loading="lazy" width="640" height="360">
+            <img src="images/${member.image}" alt="${member.name}" loading="lazy" width="640" height="360">
             <figcaption>${member.name}</figcaption>
         </figure>
         <div class="member-content">
@@ -62,7 +65,10 @@ async function getMembers() {
         }
 
         const members = await response.json();
-        directory.replaceChildren(...members.map(createMemberCard));
+        directory.innerHTML = "";
+        members.forEach((member) => {
+            directory.appendChild(createMemberCard(member));
+        });
     } catch (error) {
         directory.innerHTML = `<p>Business directory information is unavailable right now.</p>`;
         console.error(error);
