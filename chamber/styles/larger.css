@@ -23,7 +23,7 @@
     }
 
     .page-title {
-        min-height: 290px;
+        min-height: 220px;
         padding: 2rem;
     }
 
@@ -35,23 +35,8 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .list-view .member-content {
-        grid-template-columns: 1.1fr 1.2fr 0.85fr 0.55fr 0.7fr;
-        align-items: center;
-    }
-
-    .list-view .member-tagline {
-        display: none;
-    }
-
-    .list-view .membership,
-    .list-view .member-link {
-        margin: 0;
-        justify-self: start;
-    }
-
     .footer-inner {
-        grid-template-columns: 1.3fr auto 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 }

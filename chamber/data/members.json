@@ -1,74 +1,65 @@
 [
     {
         "name": "Placeholder 1",
-        "address": "Placeholder Address 1",
+        "address": "Coming soon",
         "phone": "(000) 000-0001",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
+        "website": "",
+        "image": "placeholder-view-vector.jpg",
         "membershipLevel": 3,
-        "description": "Placeholder business description."
+        "description": "This listing will be updated with a local business once details are ready."
     },
     {
-        "name": "Placeholder 2",
-        "address": "Placeholder Address 2",
-        "phone": "(000) 000-0002",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
+        "name": "Broken Arrow Bike Shop",
+        "address": "102 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 555-2101",
+        "website": "",
+        "image": "broken-arrow-bike-shop.jpg",
         "membershipLevel": 2,
-        "description": "Placeholder business description."
+        "description": "Full-service bike repair, rentals, and cycling gear for Broken Arrow riders."
     },
     {
-        "name": "Placeholder 3",
-        "address": "Placeholder Address 3",
-        "phone": "(000) 000-0003",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
-        "membershipLevel": 2,
-        "description": "Placeholder business description."
-    },
-    {
-        "name": "Placeholder 4",
-        "address": "Placeholder Address 4",
-        "phone": "(000) 000-0004",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
-        "membershipLevel": 1,
-        "description": "Placeholder business description."
-    },
-    {
-        "name": "Placeholder 5",
-        "address": "Placeholder Address 5",
-        "phone": "(000) 000-0005",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
+        "name": "Redbud Floral & Gifts",
+        "address": "314 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 555-2205",
+        "website": "",
+        "image": "redbud-floral-and-gifts.jpg",
         "membershipLevel": 3,
-        "description": "Placeholder business description."
+        "description": "Fresh floral arrangements, gifts, and seasonal décor for every occasion."
     },
     {
-        "name": "Placeholder 6",
-        "address": "Placeholder Address 6",
-        "phone": "(000) 000-0006",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
-        "membershipLevel": 1,
-        "description": "Placeholder business description."
-    },
-    {
-        "name": "Placeholder 7",
-        "address": "Placeholder Address 7",
-        "phone": "(000) 000-0007",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
+        "name": "Riverwalk Books",
+        "address": "402 S Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 555-2307",
+        "website": "",
+        "image": "riverwalk-books.jpg",
         "membershipLevel": 2,
-        "description": "Placeholder business description."
+        "description": "Independent bookstore with a curated selection of local favorites and bestsellers."
     },
     {
-        "name": "Placeholder 8",
-        "address": "Placeholder Address 8",
-        "phone": "(000) 000-0008",
-        "website": "https://example.com",
-        "image": "placeholder-view-vector.svg",
+        "name": "Broken Arrow Barber",
+        "address": "208 N Main St, Broken Arrow, OK 74012",
+        "phone": "(918) 555-2411",
+        "website": "",
+        "image": "broken-arrow-barber.jpg",
         "membershipLevel": 1,
-        "description": "Placeholder business description."
+        "description": "Classic barber services with a modern touch, including cuts, shaves, and styling."
+    },
+    {
+        "name": "Broken Arrow Realty",
+        "address": "520 W Houston St, Broken Arrow, OK 74012",
+        "phone": "(918) 555-2818",
+        "website": "",
+        "image": "broken-arrow-realty.jpg",
+        "membershipLevel": 3,
+        "description": "Local real estate experts helping buyers and sellers across Broken Arrow neighborhoods."
+    },
+    {
+        "name": "Broken Arrow Event Co.",
+        "address": "118 E Broadway St, Broken Arrow, OK 74012",
+        "phone": "(918) 555-2525",
+        "website": "",
+        "image": "broken-arrow-event-co.jpg",
+        "membershipLevel": 2,
+        "description": "Event planning, rentals, and coordination for weddings, corporate events, and celebrations."
     }
 ]

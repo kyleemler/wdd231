@@ -30,11 +30,12 @@ function setDirectoryView(view) {
 function createMemberCard(member) {
     const card = document.createElement("article");
     card.classList.add("member-card");
-    const imageSource = member.image.startsWith("http") ? member.image : `images/${member.image}`;
+
+    const websiteLink = member.website ? `<a class="member-link" href="${member.website}" target="_blank" rel="noopener">Visit Website</a>` : "";
 
     card.innerHTML = `
         <figure class="member-figure">
-            <img src="${imageSource}" alt="Placeholder image for ${member.name}" loading="lazy" width="640" height="360">
+            <img src="images/${member.image}" alt="Placeholder image for ${member.name}" loading="lazy" width="640" height="360">
             <figcaption>${member.name}</figcaption>
         </figure>
         <div class="member-content">
@@ -45,7 +46,7 @@ function createMemberCard(member) {
             <p class="member-address">${member.address}</p>
             <p class="member-phone">${member.phone}</p>
             <span class="membership">${membershipLabels[member.membershipLevel]}</span>
-            <a class="member-link" href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
+            ${websiteLink}
         </div>
     `;
 

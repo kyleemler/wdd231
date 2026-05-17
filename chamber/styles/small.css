@@ -8,7 +8,6 @@
     --gold: #f2aa1f;
     --gold-dark: #a96f00;
     --line: #ded9cf;
-    --shadow: 0 14px 34px rgb(5 5 5 / 12%);
 }
 
 * {
@@ -134,14 +133,12 @@ main {
 
 .page-title {
     display: grid;
-    min-height: 220px;
+    min-height: 180px;
     align-items: end;
     padding: 1.25rem;
     color: white;
-    background:
-        linear-gradient(90deg, rgb(5 5 5 / 96%), rgb(5 5 5 / 84%)),
-        url("../images/broken-arrow-logo.svg") right 1rem center / min(72%, 520px) auto no-repeat;
-    border: 1px solid #2f2f2f;
+    background: var(--black);
+    border-bottom: 6px solid var(--gold);
     border-radius: 8px;
 }
 
@@ -212,7 +209,6 @@ h1 {
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 8px;
-    box-shadow: var(--shadow);
 }
 
 .member-figure {
@@ -275,7 +271,6 @@ h1 {
 
 .list-view .member-card {
     display: block;
-    box-shadow: none;
 }
 
 .list-view .member-figure {
@@ -283,7 +278,7 @@ h1 {
 }
 
 .list-view .member-content {
-    display: grid;
+    display: block;
     gap: 0.35rem;
 }
 
@@ -310,22 +305,4 @@ footer h2 {
 
 footer a {
     color: white;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.social-links a {
-    display: grid;
-    width: 42px;
-    height: 42px;
-    place-items: center;
-    color: var(--black);
-    background: var(--gold);
-    border-radius: 50%;
-    font-weight: 700;
-    text-decoration: none;
 }
