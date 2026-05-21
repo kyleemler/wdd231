@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Home page for the Broken Arrow Chamber of Commerce in Broken Arrow, Oklahoma.">
+    <meta name="author" content="Kylee Emler">
+
+    <meta property="og:title" content="Broken Arrow Chamber of Commerce">
+    <meta property="og:description"
+        content="Connect with Broken Arrow businesses, events, weather, and chamber member spotlights.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/chamber/images/broken-arrow-logo-og.png">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <title>Broken Arrow Chamber of Commerce</title>
+    <link rel="icon" href="images/broken-arrow-logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Broken Arrow Chamber home">
+                <img src="images/broken-arrow-logo.svg" alt="" width="160" height="50">
+                <span>
+                    <strong>Broken Arrow</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/broken-arrow-event-co.jpg" media="(min-width: 680px)">
+                <img src="images/broken-arrow-event-co.jpg" alt="Community event space in Broken Arrow" width="1200"
+                    height="675">
+            </picture>
+            <div class="hero-content">
+                <p class="eyebrow">Broken Arrow, Oklahoma</p>
+                <h1>Build Local. Grow Together.</h1>
+                <p>Find business resources, community events, and chamber connections across Broken Arrow.</p>
+                <a class="cta-link" href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="info-panel">
+                <h2>Current Events</h2>
+                <article class="event-item">
+                    <h3>Rose District Business Mixer</h3>
+                    <p>Meet local owners and chamber leaders for an evening of networking on Main Street.</p>
+                    <p><strong>June 12</strong> at 6:00 p.m.</p>
+                </article>
+                <article class="event-item">
+                    <h3>Small Business Workshop</h3>
+                    <p>Learn practical marketing and customer service strategies for growing local visibility.</p>
+                    <p><strong>June 21</strong> at 10:00 a.m.</p>
+                </article>
+            </section>
+
+            <section class="info-panel weather-panel">
+                <h2>Weather</h2>
+                <div id="current-weather" class="current-weather" aria-live="polite">
+                    <p>Loading weather...</p>
+                </div>
+                <div>
+                    <h3>Three Day Forecast</h3>
+                    <div id="forecast" class="forecast" aria-live="polite"></div>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights-section">
+            <div class="section-heading">
+                <p class="eyebrow">Member Advertising</p>
+                <h2>Business Spotlights</h2>
+            </div>
+            <div id="spotlights" class="spotlights" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <section>
+                <h2>Broken Arrow Chamber of Commerce</h2>
+                <p>123 Main Street<br>Broken Arrow, OK 74012</p>
+                <p>info@bachamber.com<br>(918) 555-1234</p>
+            </section>
+            <section>
+                <p>WDD 231 Chamber Project</p>
+                <p>Kyle Emler</p>
+                <p>&copy; <span id="current-year"></span> Broken Arrow Chamber</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
