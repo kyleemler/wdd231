@@ -41,7 +41,7 @@
 
     .home-grid {
         grid-template-columns: 1.25fr 0.75fr;
-        align-items: start;
+        align-items: stretch;
     }
 
     .grid-view {
