@@ -4,10 +4,10 @@ const currentWeather = document.querySelector("#current-weather");
 const forecast = document.querySelector("#forecast");
 const spotlights = document.querySelector("#spotlights");
 
-const openWeatherApiKey = "YOUR_OPENWEATHERMAP_API_KEY";
+const openWeatherApiKey = "c2168f40814de03db4de6c374fdcdbb6";
 const brokenArrow = {
-    lat: 36.0609,
-    lon: -95.7975
+    lat: 36.05,
+    lon: -95.79
 };
 
 const membershipLabels = {
