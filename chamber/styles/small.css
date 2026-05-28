@@ -240,20 +240,29 @@ h1 {
 .info-panel,
 .spotlight-card,
 .member-card,
-.view-button {
+.view-button,
+.form-panel,
+.level-card,
+.thankyou-panel {
     background: white;
     border: 1px solid var(--line);
 }
 
 .info-panel,
 .spotlight-card,
-.member-card {
+.member-card,
+.form-panel,
+.level-card,
+.thankyou-panel {
     border-radius: 8px;
 }
 
 .info-panel,
 .spotlight-content,
-.member-content {
+.member-content,
+.form-panel,
+.level-card,
+.thankyou-panel {
     padding: 1rem;
 }
 
@@ -264,7 +273,9 @@ h1 {
 
 .info-panel h2,
 .section-heading h2,
-.directory-tools h2 {
+.directory-tools h2,
+.form-panel h2,
+.thankyou-panel h2 {
     margin: 0 0 0.8rem;
     font-size: 1.35rem;
 }
@@ -397,6 +408,146 @@ footer p {
     display: inline-block;
     margin-top: 0.35rem;
     font-weight: 700;
+}
+
+.join-layout,
+.membership-levels,
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-layout,
+.thankyou-panel {
+    margin-top: 1.5rem;
+}
+
+form label {
+    display: grid;
+    gap: 0.35rem;
+    color: #242424;
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.7rem;
+    border: 1px solid #aaa39a;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.level-card a:focus,
+dialog button:focus {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.submit-button,
+.level-card a,
+dialog button {
+    display: inline-block;
+    width: auto;
+    min-height: 44px;
+    padding: 0.7rem 1rem;
+    color: var(--black);
+    background: var(--gold);
+    border: 0;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.level-card a:hover,
+dialog button:hover {
+    background: #ffc84d;
+}
+
+.level-card {
+    animation: card-entry 700ms ease both;
+}
+
+.level-card:nth-of-type(2) {
+    animation-delay: 120ms;
+}
+
+.level-card:nth-of-type(3) {
+    animation-delay: 240ms;
+}
+
+.level-card:nth-of-type(4) {
+    animation-delay: 360ms;
+}
+
+.level-card h3,
+.level-card p {
+    margin: 0 0 0.55rem;
+}
+
+.level-card p {
+    color: var(--muted);
+}
+
+dialog {
+    width: min(92vw, 30rem);
+    padding: 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+dialog::backdrop {
+    background: rgb(0 0 0 / 0.6);
+}
+
+dialog h2 {
+    margin: 0 0 0.5rem;
+}
+
+dialog p,
+dialog li {
+    color: var(--muted);
+}
+
+.thankyou-panel dl {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.thankyou-panel dt {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.thankyou-panel dd {
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+@keyframes card-entry {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .list-view {

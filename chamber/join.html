@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply to join the Broken Arrow Chamber of Commerce with a membership application form.">
+    <meta name="author" content="Kylee Emler">
+
+    <meta property="og:title" content="Join the Broken Arrow Chamber of Commerce">
+    <meta property="og:description"
+        content="Choose a membership level and apply to connect your organization with Broken Arrow businesses.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/chamber/images/broken-arrow-logo-og.png">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Join | Broken Arrow Chamber of Commerce</title>
+    <link rel="icon" href="images/broken-arrow-logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Broken Arrow Chamber home">
+                <img src="images/broken-arrow-logo.svg" alt="" width="160" height="50">
+                <span>
+                    <strong>Broken Arrow</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a class="active" href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div>
+                <p class="eyebrow">Membership Application</p>
+                <h1>Join the Chamber</h1>
+                <p>Tell us about your organization and choose the membership level that fits your goals.</p>
+            </div>
+        </section>
+
+        <div class="join-layout">
+            <section class="form-panel">
+                <h2>Application Form</h2>
+                <form method="get" action="thankyou.html">
+                    <label>
+                        First Name
+                        <input type="text" name="firstName" title="Applicant first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="lastName" title="Applicant last name" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organizationTitle"
+                            title="Applicant organizational title, at least seven letters, hyphens, or spaces"
+                            autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Applicant email address" autocomplete="email"
+                            placeholder="name@example.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone
+                        <input type="tel" name="phone" title="Applicant mobile phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business/Organization Name
+                        <input type="text" name="organization" title="Business or organization name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Membership level selection" required>
+                            <option value="">Choose a level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business/Organization Description
+                        <textarea name="description" title="Business or organization description" rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input class="submit-button" type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <section class="membership-levels" aria-labelledby="membership-heading">
+                <div class="section-heading">
+                    <p class="eyebrow">Compare Options</p>
+                    <h2 id="membership-heading">Membership Levels</h2>
+                </div>
+
+                <article class="level-card">
+                    <h3>NP Membership</h3>
+                    <p>For nonprofit organizations. No annual fee.</p>
+                    <a href="#np-modal" data-modal="np-modal">View Benefits</a>
+                </article>
+
+                <article class="level-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Core chamber access for growing visibility.</p>
+                    <a href="#bronze-modal" data-modal="bronze-modal">View Benefits</a>
+                </article>
+
+                <article class="level-card">
+                    <h3>Silver Membership</h3>
+                    <p>More promotion and event support.</p>
+                    <a href="#silver-modal" data-modal="silver-modal">View Benefits</a>
+                </article>
+
+                <article class="level-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premier exposure and leadership access.</p>
+                    <a href="#gold-modal" data-modal="gold-modal">View Benefits</a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="np-modal">
+        <h2>NP Membership Benefits</h2>
+        <p>No annual fee for qualifying nonprofit organizations.</p>
+        <ul>
+            <li>Directory listing</li>
+            <li>Community event calendar access</li>
+            <li>Nonprofit networking invitations</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+        <h2>Bronze Membership Benefits</h2>
+        <p>Entry-level support for local businesses building community connections.</p>
+        <ul>
+            <li>Directory listing</li>
+            <li>Member-only training invitations</li>
+            <li>Discounted chamber event registration</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal">
+        <h2>Silver Membership Benefits</h2>
+        <p>Expanded visibility for organizations ready to be seen more often.</p>
+        <ul>
+            <li>All Bronze benefits</li>
+            <li>Social media feature opportunities</li>
+            <li>Business spotlight eligibility</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal">
+        <h2>Gold Membership Benefits</h2>
+        <p>Top-tier support for businesses seeking strong chamber presence.</p>
+        <ul>
+            <li>All Silver benefits</li>
+            <li>Priority event sponsorship options</li>
+            <li>Homepage spotlight priority</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="footer">
+            <section>
+                <h2>Broken Arrow Chamber of Commerce</h2>
+                <p>123 Main Street<br>Broken Arrow, OK 74012</p>
+                <p>info@bachamber.com<br>(918) 555-1234</p>
+            </section>
+            <section>
+                <p>WDD 231 Chamber Project</p>
+                <p>Kyle Emler</p>
+                <p>&copy; <span id="current-year"></span> Broken Arrow Chamber</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

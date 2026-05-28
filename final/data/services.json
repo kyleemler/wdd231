@@ -1,0 +1,14 @@
+[
+    {
+        "category": "Skin Care",
+        "services": ["Facials", "Dermaplaning", "Peels"]
+    },
+    {
+        "category": "Beauty",
+        "services": ["Waxing", "Brows", "Nails", "Gel Manicures", "Nail Art", "Lashes", "Lash Extensions", "Lash Lifts"]
+    },
+    {
+        "category": "Relaxation",
+        "services": ["Facials", "Massage Therapy", "Relaxation Massage", "Deep Tissue"]
+    }
+]

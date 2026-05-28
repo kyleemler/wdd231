@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thank you confirmation page for the Broken Arrow Chamber of Commerce membership application.">
+    <meta name="author" content="Kylee Emler">
+
+    <meta property="og:title" content="Application Received | Broken Arrow Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the Broken Arrow Chamber of Commerce.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/chamber/images/broken-arrow-logo-og.png">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <title>Thank You | Broken Arrow Chamber of Commerce</title>
+    <link rel="icon" href="images/broken-arrow-logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Broken Arrow Chamber home">
+                <img src="images/broken-arrow-logo.svg" alt="" width="160" height="50">
+                <span>
+                    <strong>Broken Arrow</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a class="active" href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div>
+                <p class="eyebrow">Application Received</p>
+                <h1>Thank You</h1>
+                <p>Your chamber membership application has been submitted successfully.</p>
+            </div>
+        </section>
+
+        <section class="thankyou-panel">
+            <h2>Submitted Information</h2>
+            <dl id="submitted-info"></dl>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <section>
+                <h2>Broken Arrow Chamber of Commerce</h2>
+                <p>123 Main Street<br>Broken Arrow, OK 74012</p>
+                <p>info@bachamber.com<br>(918) 555-1234</p>
+            </section>
+            <section>
+                <p>WDD 231 Chamber Project</p>
+                <p>Kyle Emler</p>
+                <p>&copy; <span id="current-year"></span> Broken Arrow Chamber</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

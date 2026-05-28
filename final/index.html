@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="S&#274;K Esthetics and Wellness connects clients with esthetics and wellness professionals in Broken Arrow, Oklahoma.">
+    <meta name="author" content="Kyle Emler">
+    <meta property="og:title" content="S&#274;K Esthetics and Wellness">
+    <meta property="og:description"
+        content="Meet esthetics and wellness professionals serving clients at S&#274;K in Broken Arrow, Oklahoma.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/sek-esthetics.jpg">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/index.html">
+    <meta property="og:type" content="website">
+    <title>S&#274;K Esthetics and Wellness</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" aria-label="S&#274;K Esthetics and Wellness home">
+            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics and Wellness" width="96" height="54"
+                loading="lazy" decoding="async">
+        </a>
+        <h1>S&#274;K Esthetics and Wellness</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="professionals.html">Professionals</a></li>
+                <li><a href="information.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Add the lobby hero image here when the final photo is ready. -->
+            <h2>Beauty and wellness in one calm space.</h2>
+            <p>
+                Explore services, meet the professionals, and find the right appointment for your skin,
+                beauty, and wellness goals.
+            </p>
+            <p>
+                <a href="professionals.html">Meet the Professionals</a>
+                <a href="information.html">Get Information</a>
+            </p>
+        </section>
+
+        <section id="professionals">
+            <h2>Find a Service</h2>
+            <p>Choose a service type to see professionals who may be a good fit.</p>
+            <div id="service-filters" aria-label="Filter professionals by service type"></div>
+            <div id="professional-cards"></div>
+        </section>
+
+        <section id="information">
+            <h2>Information</h2>
+            <ul>
+                <li><a href="tel:+19185550123">Call S&#274;K</a></li>
+                <li><a href="mailto:info@sekesthetics.com">Email S&#274;K</a></li>
+                <li><a href="professionals.html">Browse available services</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <dialog id="professional-modal">
+        <button id="modal-close" type="button">Close</button>
+        <div id="modal-content"></div>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year"></span> S&#274;K Esthetics and Wellness</p>
+    </footer>
+</body>
+
+</html>

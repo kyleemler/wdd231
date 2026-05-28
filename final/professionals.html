@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse the independent esthetics, beauty, and wellness professionals available at S&#274;K Esthetics and Wellness.">
+    <meta name="author" content="Kyle Emler">
+    <meta property="og:title" content="Professionals at S&#274;K Esthetics and Wellness">
+    <meta property="og:description"
+        content="Find service providers for skin care, brows, waxing, beauty, and wellness at S&#274;K.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/sek-esthetics.jpg">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/professionals.html">
+    <meta property="og:type" content="website">
+    <title>Professionals | S&#274;K Esthetics and Wellness</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" aria-label="S&#274;K Esthetics and Wellness home">
+            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics and Wellness" width="96" height="54"
+                loading="lazy" decoding="async">
+        </a>
+        <h1>S&#274;K Esthetics and Wellness</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professionals.html" aria-current="page">Professionals</a></li>
+                <li><a href="information.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Professionals at S&#274;K</h2>
+            <p>Explore service providers and open each card for more details.</p>
+            <div id="professional-cards"></div>
+        </section>
+    </main>
+
+    <dialog id="professional-modal">
+        <button id="modal-close" type="button">Close</button>
+        <div id="modal-content"></div>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year"></span> S&#274;K Esthetics and Wellness</p>
+    </footer>
+</body>
+
+</html>

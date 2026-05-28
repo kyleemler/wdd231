@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Sarah",
+        "business": "Skin by Sarah",
+        "specialties": ["Facials", "Waxing", "Brows"],
+        "summary": "Customized esthetic services focused on skin care, brows, and waxing.",
+        "details": "Skin by Sarah offers facial treatments, brow services, waxing, and related esthetic services in a quiet spa setting.",
+        "linkText": "Request an appointment",
+        "linkUrl": "mailto:info@sekesthetics.com?subject=Skin%20by%20Sarah%20Appointment"
+    },
+    {
+        "name": "Maddie",
+        "business": "Luna Glow Esthetics",
+        "specialties": ["Facials", "Dermaplaning", "Peels"],
+        "summary": "Skin care services focused on brightening, smoothing, and helping clients feel refreshed.",
+        "details": "Luna Glow Esthetics offers facials, dermaplaning, light chemical peels, and skin care consultations for clients who want a polished, healthy glow.",
+        "linkText": "Request an appointment",
+        "linkUrl": "mailto:info@sekesthetics.com?subject=Luna%20Glow%20Esthetics%20Appointment"
+    },
+    {
+        "name": "Claire",
+        "business": "Claire's Massage Studio",
+        "specialties": ["Massage Therapy", "Relaxation Massage", "Deep Tissue"],
+        "summary": "Therapeutic massage for relaxation, tension relief, and restorative body care.",
+        "details": "Claire's Massage Studio offers relaxation massage, deep tissue work, and customized sessions for clients looking to reduce stress and support overall wellness.",
+        "linkText": "Request an appointment",
+        "linkUrl": "mailto:info@sekesthetics.com?subject=Claire%27s%20Massage%20Studio%20Appointment"
+    },
+    {
+        "name": "Brielle",
+        "business": "Polished Pearl Nail Co.",
+        "specialties": ["Nails", "Gel Manicures", "Nail Art"],
+        "summary": "Detailed nail services with a soft, clean, and elevated finish.",
+        "details": "Polished Pearl Nail Co. offers gel manicures, structured manicures, nail art, and detail-focused nail care by appointment.",
+        "linkText": "Request an appointment",
+        "linkUrl": "mailto:info@sekesthetics.com?subject=Polished%20Pearl%20Nail%20Appointment"
+    },
+    {
+        "name": "Tessa",
+        "business": "Velvet Wink Lash Lounge",
+        "specialties": ["Lashes", "Lash Extensions", "Lash Lifts"],
+        "summary": "Lash services designed for soft definition, fuller looks, and low-maintenance beauty.",
+        "details": "Velvet Wink Lash Lounge offers lash extensions, lash lifts, tinting, and customized lash looks for clients who want polished everyday eyes.",
+        "linkText": "Request an appointment",
+        "linkUrl": "mailto:info@sekesthetics.com?subject=Velvet%20Wink%20Lash%20Appointment"
+    }
+]

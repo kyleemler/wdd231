@@ -1,0 +1,78 @@
+:root {
+    --color-logo-ink: #000000;
+    --color-logo-paper: #f4f1ed;
+    --color-page: var(--color-logo-paper);
+    --color-text: var(--color-logo-ink);
+    --color-muted: #5f5b55;
+    --color-line: #dbd8d2;
+    --font-logo: "Times New Roman", Georgia, serif;
+    --font-brand-label: Arial, Helvetica, sans-serif;
+    --font-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-page);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-line);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-logo-ink);
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--font-logo);
+    font-size: clamp(1.4rem, 5vw, 2.25rem);
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: var(--color-logo-ink);
+}
+
+[aria-current="page"] {
+    font-weight: 700;
+    text-decoration-thickness: 0.18em;
+    text-underline-offset: 0.25em;
+}
+
+main {
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem 0;
+}
