@@ -229,7 +229,8 @@ h1 {
 }
 
 .home-grid,
-.spotlights-section {
+.spotlights-section,
+.placeholder-panel {
     margin-top: 1.5rem;
 }
 
