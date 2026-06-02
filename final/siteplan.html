@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan for the SEK Esthetics and Wellness final project.">
+  <meta name="author" content="Kyle Emler">
+  <title>SEK Esthetics + Wellness Site Plan</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Individual Project Site Plan</p>
+      <h1>SEK Esthetics + Wellness</h1>
+      <p class="intro">A clean, welcoming website plan for a spa and wellness business focused on services, professionals, and client interest.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>SEK Esthetics + Wellness</strong></p>
+      <p>This name was selected because it represents the business directly and clearly communicates that the website is focused on esthetics, spa services, and wellness. The name is professional, simple, and appropriate for a beauty and wellness brand.</p>
+      <p><strong>Optional domain:</strong> sekestheticswellness.com</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The purpose of the website is to promote SEK Esthetics + Wellness and give potential clients information about the spa, the services offered, and the professionals who work there. The site will help visitors learn about services such as facials, waxing, massage therapy, lashes, brows, and nails.</p>
+    </section>
+
+    <section>
+      <h2>Target Audience</h2>
+      <p>The target audience is people looking for beauty, spa, and wellness services. This includes clients interested in facials, waxing, massage therapy, lashes, brows, nails, and learning more about the professionals who provide those services.</p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>What services does SEK Esthetics + Wellness offer, and which service category fits my needs?</li>
+        <li>Who are the professionals at the spa, and what services does each person provide?</li>
+        <li>How can I show interest in booking a service or learn more before scheduling?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pages</h2>
+      <div class="page-grid">
+        <article>
+          <h3>Home Page</h3>
+          <p><strong>index.html</strong></p>
+          <ul>
+            <li>Business introduction</li>
+            <li>Featured services</li>
+            <li>Call to action</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Professionals Page</h3>
+          <p><strong>professionals.html</strong></p>
+          <ul>
+            <li>Information about service professionals</li>
+            <li>Dynamic cards created with JavaScript</li>
+            <li>Modal dialog with more professional details</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Services Page</h3>
+          <p><strong>services.html</strong></p>
+          <ul>
+            <li>List of services</li>
+            <li>Booking interest form</li>
+            <li>Preferred service category saved with local storage</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Data and API Plan</h2>
+      <p>The site will use a local JSON file instead of a public API to keep the project focused and manageable. The Fetch API will load information about professionals from the JSON file and display that information dynamically on the professionals page.</p>
+    </section>
+
+    <section>
+      <h2>JavaScript Features</h2>
+      <ul>
+        <li>Fetch API for loading professional data from a local JSON file</li>
+        <li>try/catch error handling for data loading</li>
+        <li>Dynamic content generation for professional cards</li>
+        <li>Event listeners for buttons, forms, and modal interactions</li>
+        <li>Local storage to save the user's preferred service category</li>
+        <li>Modal dialog for additional professional information</li>
+        <li>Array methods such as forEach()</li>
+        <li>Template literals for building reusable HTML output</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <div class="type-grid">
+        <div>
+          <h3>DM Serif Display</h3>
+          <p class="font-heading">Used for the site title, page headings, and section headings to create an elegant spa-style look.</p>
+        </div>
+        <div>
+          <h3>Montserrat</h3>
+          <p>Used for body text, navigation, buttons, form labels, cards, and supporting content because it is clean and readable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Wireframe</h2>
+      <p>The home page layout will introduce the business, show featured service categories, and guide visitors toward learning about services or professionals.</p>
+
+      <div class="wireframes">
+        <article>
+          <h3>Mobile View</h3>
+          <div class="wireframe mobile" aria-label="Mobile home page wireframe">
+            <div class="box small">Logo / Menu</div>
+            <div class="box hero">Hero Image + Welcome Text</div>
+            <div class="box">Call to Action</div>
+            <div class="box">Featured Services</div>
+            <div class="box">Professional Preview</div>
+            <div class="box">Footer</div>
+          </div>
+        </article>
+
+        <article>
+          <h3>Desktop View</h3>
+          <div class="wireframe desktop" aria-label="Desktop home page wireframe">
+            <div class="box header">Logo / Navigation</div>
+            <div class="box hero">Hero Image + Business Introduction + Call to Action</div>
+            <div class="box feature">Featured Services</div>
+            <div class="box cards">Service Category Cards</div>
+            <div class="box professionals">Professional Preview</div>
+            <div class="box footer">Footer</div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SEK Esthetics + Wellness Site Plan</p>
+  </footer>
+</body>
+</html>
