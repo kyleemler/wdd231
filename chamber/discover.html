@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
@@ -58,14 +58,29 @@
             <div>
                 <p class="eyebrow">Broken Arrow, Oklahoma</p>
                 <h1>Discover</h1>
-                <p>Community highlights and local visitor information will be featured here.</p>
+                <p>Explore the places, parks, arts, and local history that make Broken Arrow a strong place to live,
+                    visit, and do business.</p>
             </div>
         </section>
 
-        <section class="info-panel placeholder-panel">
-            <h2>Local Highlights</h2>
-            <p>Explore the Rose District, local events, parks, shops, and places that make Broken Arrow a strong
-                community for residents and businesses.</p>
+        <div class="discover-intro">
+            <section class="info-panel">
+                <p class="eyebrow">Community Snapshot</p>
+                <h2>Why Broken Arrow Works</h2>
+                <p>Broken Arrow is one of Oklahoma's largest cities, with a 2020 Census population of 113,540. Census
+                    QuickFacts reports 2.65 persons per household and a 2020-2024 median household income of $86,765,
+                    giving the community a strong residential base for local employers and member businesses.</p>
+            </section>
+
+            <aside id="visit-message" class="visit-message" aria-live="polite"></aside>
+        </div>
+
+        <section class="discover-section" aria-labelledby="discover-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Area Highlights</p>
+                <h2 id="discover-heading">Places to Visit</h2>
+            </div>
+            <div id="discover-grid" class="discover-grid"></div>
         </section>
     </main>
 

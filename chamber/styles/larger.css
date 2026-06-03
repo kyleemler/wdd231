@@ -49,6 +49,11 @@
         align-items: start;
     }
 
+    .discover-intro {
+        grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.42fr);
+        align-items: stretch;
+    }
+
     .thankyou-panel dl {
         grid-template-columns: 14rem 1fr;
         gap: 0.75rem 1rem;
@@ -72,9 +77,40 @@
     }
 }
 
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "card1 card2"
+            "card4 card3"
+            "card5 card6"
+            "card8 card7";
+    }
+
+    .interest-card img {
+        transition: filter 220ms ease, transform 220ms ease;
+    }
+
+    .interest-card:hover img {
+        filter: saturate(1.18) contrast(1.05);
+        transform: scale(1.04);
+    }
+}
+
 @media (min-width: 960px) {
     .grid-view,
     .spotlights {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
     }
 }

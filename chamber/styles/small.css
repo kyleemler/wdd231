@@ -51,6 +51,8 @@ footer {
 .home-grid,
 .spotlights,
 .member-directory,
+.discover-intro,
+.discover-grid,
 .weather-panel,
 .forecast {
     display: grid;
@@ -230,7 +232,8 @@ h1 {
 
 .home-grid,
 .spotlights-section,
-.placeholder-panel {
+.discover-intro,
+.discover-section {
     margin-top: 1.5rem;
 }
 
@@ -244,7 +247,9 @@ h1 {
 .view-button,
 .form-panel,
 .level-card,
-.thankyou-panel {
+.thankyou-panel,
+.visit-message,
+.interest-card {
     background: white;
     border: 1px solid var(--line);
 }
@@ -254,7 +259,9 @@ h1 {
 .member-card,
 .form-panel,
 .level-card,
-.thankyou-panel {
+.thankyou-panel,
+.visit-message,
+.interest-card {
     border-radius: 8px;
 }
 
@@ -263,7 +270,9 @@ h1 {
 .member-content,
 .form-panel,
 .level-card,
-.thankyou-panel {
+.thankyou-panel,
+.visit-message,
+.interest-card {
     padding: 1rem;
 }
 
@@ -276,7 +285,8 @@ h1 {
 .section-heading h2,
 .directory-tools h2,
 .form-panel h2,
-.thankyou-panel h2 {
+.thankyou-panel h2,
+.interest-card h2 {
     margin: 0 0 0.8rem;
     font-size: 1.35rem;
 }
@@ -336,12 +346,112 @@ footer p {
 }
 
 .spotlight-card img,
-.member-figure img {
+.member-figure img,
+.interest-card img {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     background: #ece7dd;
+}
+
+.visit-message {
+    align-self: stretch;
+    color: white;
+    background: #242424;
+    font-weight: 700;
+}
+
+.discover-grid {
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.card-1 {
+    grid-area: card1;
+}
+
+.card-2 {
+    grid-area: card2;
+}
+
+.card-3 {
+    grid-area: card3;
+}
+
+.card-4 {
+    grid-area: card4;
+}
+
+.card-5 {
+    grid-area: card5;
+}
+
+.card-6 {
+    grid-area: card6;
+}
+
+.card-7 {
+    grid-area: card7;
+}
+
+.card-8 {
+    grid-area: card8;
+}
+
+.interest-card {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    gap: 0.7rem;
+    overflow: hidden;
+}
+
+.interest-card h2,
+.interest-card p,
+.interest-card address,
+.interest-card figure {
+    margin: 0;
+}
+
+.interest-card figure {
+    margin-inline: -1rem;
+}
+
+.interest-card img {
+    aspect-ratio: 3 / 2;
+}
+
+.interest-card address {
+    color: var(--muted);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.interest-card p {
+    color: #303030;
+}
+
+.interest-card button {
+    justify-self: start;
+    min-height: 44px;
+    padding: 0.7rem 1rem;
+    color: var(--black);
+    background: var(--gold);
+    border: 0;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.interest-card button:hover {
+    background: #ffc84d;
 }
 
 .spotlight-content h3,
