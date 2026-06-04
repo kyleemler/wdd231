@@ -1,3 +1,5 @@
+import { getPreferredService, savePreferredService } from "./storage.js";
+
 let professionals = [];
 let serviceCategories = [];
 
@@ -93,13 +95,16 @@ function displayServiceFilters() {
         return;
     }
 
+    serviceFilters.dataset.savedCategory = getPreferredService();
+
     const allButton = document.createElement("button");
     allButton.type = "button";
-    allButton.textContent = "All Services";
-    allButton.setAttribute("aria-pressed", "true");
+    allButton.textContent = "Clear";
+    allButton.setAttribute("aria-pressed", "false");
     allButton.addEventListener("click", () => {
-        displayProfessionals(professionals);
+        cardsContainer.innerHTML = "";
         setActiveFilter(allButton);
+        savePreferredService("All Services");
     });
     serviceFilters.appendChild(allButton);
 
@@ -115,6 +120,7 @@ function displayServiceFilters() {
 
             displayProfessionals(matchingProfessionals);
             setActiveFilter(button);
+            savePreferredService(serviceCategory.category);
         });
 
         serviceFilters.appendChild(button);
@@ -131,23 +137,28 @@ function displayProfessionalError() {
 
 async function getProfessionals() {
     try {
-        const [professionalsResponse, servicesResponse] = await Promise.all([
+        const [professionalsResponse, categoriesResponse] = await Promise.all([
             fetch("data/professionals.json"),
-            fetch("data/services.json")
+            fetch("data/categories.json")
         ]);
 
         if (!professionalsResponse.ok) {
             throw new Error(`Unable to load professional data: ${professionalsResponse.status}`);
         }
 
-        if (!servicesResponse.ok) {
-            throw new Error(`Unable to load service data: ${servicesResponse.status}`);
+        if (!categoriesResponse.ok) {
+            throw new Error(`Unable to load category data: ${categoriesResponse.status}`);
         }
 
         professionals = await professionalsResponse.json();
-        serviceCategories = await servicesResponse.json();
+        serviceCategories = await categoriesResponse.json();
         displayServiceFilters();
-        displayProfessionals(professionals);
+
+        if (serviceFilters) {
+            cardsContainer.innerHTML = "";
+        } else {
+            displayProfessionals(professionals);
+        }
     } catch (error) {
         console.error(error);
         displayProfessionalError();

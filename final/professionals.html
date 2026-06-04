@@ -16,8 +16,8 @@
     <title>Professionals | S&#274;K Esthetics and Wellness</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/site.css">
-    <script src="scripts/site.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/site.js" type="module"></script>
+    <script src="scripts/home.js" type="module"></script>
 </head>
 
 <body>
@@ -27,7 +27,8 @@
                 loading="lazy" decoding="async">
         </a>
         <h1>S&#274;K Esthetics and Wellness</h1>
-        <nav>
+        <button id="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <nav id="primary-navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="professionals.html" aria-current="page">Professionals</a></li>
@@ -51,6 +52,7 @@
 
     <footer>
         <p>&copy; <span id="year"></span> S&#274;K Esthetics and Wellness</p>
+        <p><a href="attributions.html">Attributions</a></p>
     </footer>
 </body>
 
