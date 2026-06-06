@@ -99,12 +99,18 @@ function displayServiceFilters() {
 
     const allButton = document.createElement("button");
     allButton.type = "button";
-    allButton.textContent = "Clear";
+    allButton.textContent = "Clear Results";
     allButton.setAttribute("aria-pressed", "false");
+    allButton.hidden = true;
     allButton.addEventListener("click", () => {
         cardsContainer.innerHTML = "";
         setActiveFilter(allButton);
         savePreferredService("All Services");
+        allButton.hidden = true;
+
+        const message = document.createElement("p");
+        message.textContent = "Select a category to view matching professionals.";
+        cardsContainer.appendChild(message);
     });
     serviceFilters.appendChild(allButton);
 
@@ -121,10 +127,15 @@ function displayServiceFilters() {
             displayProfessionals(matchingProfessionals);
             setActiveFilter(button);
             savePreferredService(serviceCategory.category);
+            allButton.hidden = false;
         });
 
         serviceFilters.appendChild(button);
     });
+
+    const message = document.createElement("p");
+    message.textContent = "Select a category to view matching professionals.";
+    cardsContainer.appendChild(message);
 }
 
 function displayProfessionalError() {
@@ -154,9 +165,7 @@ async function getProfessionals() {
         serviceCategories = await categoriesResponse.json();
         displayServiceFilters();
 
-        if (serviceFilters) {
-            cardsContainer.innerHTML = "";
-        } else {
+        if (!serviceFilters) {
             displayProfessionals(professionals);
         }
     } catch (error) {

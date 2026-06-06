@@ -13,18 +13,47 @@
     <meta property="og:type" content="website">
     <title>Attributions | S&#274;K Esthetics and Wellness</title>
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
 </head>
 
 <body>
+    <header>
+        <a href="index.html" aria-label="S&#274;K Esthetics and Wellness home">
+            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics and Wellness" width="96" height="54"
+                loading="lazy" decoding="async">
+        </a>
+        <h1>S&#274;K Esthetics and Wellness</h1>
+        <button id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professionals.html">Professionals</a></li>
+                <li><a href="information.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <h1>Attributions</h1>
-        <ul>
-            <li>S&#274;K Esthetics and Wellness logo and brand image provided for course project use.</li>
-            <li>Professional names, business names, service descriptions, and inquiry content were written for this
-                student project.</li>
-        </ul>
-        <p><a href="index.html">Return to Home</a></p>
+        <section>
+            <h2>Attributions</h2>
+            <ul>
+                <li>S&#274;K Esthetics and Wellness logo and brand image provided for course project use.</li>
+                <li>Professional names, business names, service descriptions, and inquiry content were written for this
+                    student project.</li>
+            </ul>
+            <p><a href="index.html">Return to Home</a></p>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> S&#274;K Esthetics and Wellness</p>
+    </footer>
 </body>
 
 </html>

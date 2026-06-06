@@ -27,7 +27,12 @@
                 loading="lazy" decoding="async">
         </a>
         <h1>S&#274;K Esthetics and Wellness</h1>
-        <button id="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+        <button id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav id="primary-navigation">
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
@@ -38,28 +43,30 @@
     </header>
 
     <main>
-        <section>
-            <img src="images/sek-esthetics.jpg" alt="Treatment room at S&#274;K Esthetics and Wellness" width="1200"
-                height="800" loading="lazy" decoding="async">
-            <h2>Beauty and wellness in one calm space.</h2>
-            <p>
-                Explore services, meet the professionals, and find the right appointment for your skin,
-                beauty, and wellness goals.
-            </p>
-            <p>
-                <a href="professionals.html">Meet the Professionals</a>
-                <a href="information.html">Get Information</a>
-            </p>
+        <section class="hero">
+            <img src="images/lobby-hero.webp" alt="Reception area at S&#274;K Esthetics and Wellness" width="1400"
+                height="788" loading="lazy" decoding="async">
+            <div class="hero-content">
+                <h2>Beauty and wellness in one calm space.</h2>
+                <p>
+                    Explore services, meet the professionals, and find the right appointment for your skin,
+                    beauty, and wellness goals.
+                </p>
+                <p class="hero-actions">
+                    <a href="professionals.html">Meet the Professionals</a>
+                    <a href="information.html">Get Information</a>
+                </p>
+            </div>
         </section>
 
-        <section id="professionals">
+        <section id="professionals" class="service-finder">
             <h2>Find a Service</h2>
             <p>Choose a service type to see professionals who may be a good fit.</p>
             <div id="service-filters" aria-label="Filter professionals by service type"></div>
             <div id="professional-cards"></div>
         </section>
 
-        <section id="information">
+        <section id="information" class="info-links">
             <h2>Information</h2>
             <ul>
                 <li><a href="tel:+19185550123">Call S&#274;K</a></li>

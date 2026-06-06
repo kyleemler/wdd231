@@ -15,8 +15,10 @@ if (timestamp) {
 if (menuButton && primaryNavigation) {
     menuButton.addEventListener("click", () => {
         const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+        const willOpen = !isExpanded;
 
-        menuButton.setAttribute("aria-expanded", String(!isExpanded));
-        primaryNavigation.classList.toggle("open", !isExpanded);
+        menuButton.setAttribute("aria-expanded", String(willOpen));
+        menuButton.setAttribute("aria-label", willOpen ? "Close navigation" : "Open navigation");
+        primaryNavigation.classList.toggle("open", willOpen);
     });
 }
