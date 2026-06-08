@@ -1,5 +1,3 @@
-import { getPreferredService, savePreferredService } from "./storage.js";
-
 let professionals = [];
 let serviceCategories = [];
 
@@ -8,6 +6,34 @@ const serviceFilters = document.querySelector("#service-filters");
 const modal = document.querySelector("#professional-modal");
 const modalContent = document.querySelector("#modal-content");
 const modalClose = document.querySelector("#modal-close");
+
+async function getProfessionals() {
+    try {
+        const [professionalsResponse, categoriesResponse] = await Promise.all([
+            fetch("data/professionals.json"),
+            fetch("data/categories.json")
+        ]);
+
+        if (!professionalsResponse.ok) {
+            throw new Error(`Unable to load professional data: ${professionalsResponse.status}`);
+        }
+
+        if (!categoriesResponse.ok) {
+            throw new Error(`Unable to load category data: ${categoriesResponse.status}`);
+        }
+
+        professionals = await professionalsResponse.json();
+        serviceCategories = await categoriesResponse.json();
+        displayServiceFilters();
+
+        if (!serviceFilters) {
+            displayProfessionals(professionals);
+        }
+    } catch (error) {
+        console.error(error);
+        displayProfessionalError();
+    }
+}
 
 function createProfessionalCard(professional) {
     const card = document.createElement("article");
@@ -95,8 +121,6 @@ function displayServiceFilters() {
         return;
     }
 
-    serviceFilters.dataset.savedCategory = getPreferredService();
-
     const allButton = document.createElement("button");
     allButton.type = "button";
     allButton.textContent = "Clear Results";
@@ -105,7 +129,6 @@ function displayServiceFilters() {
     allButton.addEventListener("click", () => {
         cardsContainer.innerHTML = "";
         setActiveFilter(allButton);
-        savePreferredService("All Services");
         allButton.hidden = true;
 
         const message = document.createElement("p");
@@ -126,7 +149,6 @@ function displayServiceFilters() {
 
             displayProfessionals(matchingProfessionals);
             setActiveFilter(button);
-            savePreferredService(serviceCategory.category);
             allButton.hidden = false;
         });
 
@@ -144,34 +166,6 @@ function displayProfessionalError() {
     const message = document.createElement("p");
     message.textContent = "Professional information is not available right now. Please try again later.";
     cardsContainer.appendChild(message);
-}
-
-async function getProfessionals() {
-    try {
-        const [professionalsResponse, categoriesResponse] = await Promise.all([
-            fetch("data/professionals.json"),
-            fetch("data/categories.json")
-        ]);
-
-        if (!professionalsResponse.ok) {
-            throw new Error(`Unable to load professional data: ${professionalsResponse.status}`);
-        }
-
-        if (!categoriesResponse.ok) {
-            throw new Error(`Unable to load category data: ${categoriesResponse.status}`);
-        }
-
-        professionals = await professionalsResponse.json();
-        serviceCategories = await categoriesResponse.json();
-        displayServiceFilters();
-
-        if (!serviceFilters) {
-            displayProfessionals(professionals);
-        }
-    } catch (error) {
-        console.error(error);
-        displayProfessionalError();
-    }
 }
 
 if (cardsContainer && modal && modalContent && modalClose) {
