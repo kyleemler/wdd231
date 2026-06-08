@@ -15,6 +15,10 @@
     <meta property="og:type" content="website">
     <title>S&#274;K Esthetics + Wellness</title>
     <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/site.css">
     <script src="scripts/site.js" type="module"></script>
     <script src="scripts/home.js" type="module"></script>
@@ -26,7 +30,7 @@
             <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics + Wellness" width="96" height="54"
                 loading="lazy" decoding="async">
         </a>
-        <h1>S&#274;K Esthetics + Wellness</h1>
+        <p class="site-title">S&#274;K Esthetics + Wellness</p>
         <button id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
             aria-controls="primary-navigation">
             <span></span>
@@ -47,7 +51,7 @@
             <img src="images/lobby-hero.webp" alt="Reception area at S&#274;K Esthetics + Wellness" width="1400"
                 height="788" loading="lazy" decoding="async">
             <div class="hero-content">
-                <h2>Beauty and wellness in one calm space.</h2>
+                <h1>Beauty and wellness in one calm space.</h1>
                 <p>
                     Explore services, meet the professionals, and find the right appointment for your skin,
                     beauty, and wellness goals.
@@ -62,7 +66,7 @@
         <section id="professionals" class="service-finder">
             <h2>Find a Service</h2>
             <p>Choose a service type to see professionals who may be a good fit.</p>
-            <div id="service-filters" aria-label="Filter professionals by service type"></div>
+            <div id="service-filters" role="group" aria-label="Filter professionals by service type"></div>
             <div id="professional-cards"></div>
         </section>
 

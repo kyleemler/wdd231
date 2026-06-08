@@ -6,13 +6,9 @@
     --color-muted: #5f5b55;
     --color-line: #dbd8d2;
     --color-surface: #fffdfa;
-    --font-logo: "Times New Roman", Georgia, serif;
-    --font-brand-label: Arial, Helvetica, sans-serif;
-    --font-body: Arial, Helvetica, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
+    --font-logo: "Cormorant Garamond", Georgia, serif;
+    --font-brand-label: "Inter", Arial, Helvetica, sans-serif;
+    --font-body: "Inter", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -42,18 +38,25 @@ header > a {
     flex: 0 0 auto;
 }
 
-h1,
 h2,
 h3 {
     color: var(--color-logo-ink);
 }
 
+h1,
 h2 {
     margin: 0 0 0.75rem;
     font-family: var(--font-logo);
-    font-size: clamp(1.7rem, 5vw, 2.5rem);
     font-weight: 400;
     line-height: 1.1;
+}
+
+h1 {
+    font-size: clamp(2rem, 7vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.7rem, 5vw, 2.5rem);
 }
 
 h3 {
@@ -61,7 +64,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-h1 {
+.site-title {
     flex: 1 1 min(14rem, 100%);
     margin: 0;
     font-family: var(--font-logo);
@@ -200,7 +203,7 @@ section > p {
     max-width: 42rem;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     margin: 0 0 0.75rem;
     font-family: var(--font-logo);
     font-size: clamp(2rem, 7vw, 4rem);
@@ -432,7 +435,7 @@ footer p {
         flex-wrap: nowrap;
     }
 
-    h1 {
+    .site-title {
         flex: 0 1 auto;
     }
 
