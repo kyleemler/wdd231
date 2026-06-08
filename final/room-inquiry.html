@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Confirmation page for S&#274;K Esthetics and Wellness room rental inquiry submissions.">
+        content="Confirmation page for S&#274;K Esthetics + Wellness room rental inquiry submissions.">
     <meta name="author" content="Kyle Emler">
-    <meta property="og:title" content="Room Inquiry Received | S&#274;K Esthetics and Wellness">
+    <meta property="og:title" content="Room Inquiry Received | S&#274;K Esthetics + Wellness">
     <meta property="og:description"
-        content="Confirmation for prospective room renters who submitted information to S&#274;K Esthetics and Wellness.">
+        content="Confirmation for prospective room renters who submitted information to S&#274;K Esthetics + Wellness.">
     <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/sek-esthetics.jpg">
     <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/room-inquiry.html">
     <meta property="og:type" content="website">
-    <title>Room Inquiry Received | S&#274;K Esthetics and Wellness</title>
+    <title>Room Inquiry Received | S&#274;K Esthetics + Wellness</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/site.css">
     <script src="scripts/site.js" type="module"></script>
@@ -22,11 +22,11 @@
 
 <body>
     <header>
-        <a href="index.html" aria-label="S&#274;K Esthetics and Wellness home">
-            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics and Wellness" width="96" height="54"
+        <a href="index.html" aria-label="S&#274;K Esthetics + Wellness home">
+            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics + Wellness" width="96" height="54"
                 loading="lazy" decoding="async">
         </a>
-        <h1>S&#274;K Esthetics and Wellness</h1>
+        <h1>S&#274;K Esthetics + Wellness</h1>
         <button id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
             aria-controls="primary-navigation">
             <span></span>
@@ -43,19 +43,23 @@
     </header>
 
     <main>
-        <section>
+        <section class="confirmation-hero">
             <h2>Room Inquiry Received</h2>
-            <p>Thank you for requesting information about available rooms at S&#274;K.</p>
+            <p>Thank you for requesting information about available rooms at S&#274;K Esthetics + Wellness. Your submitted details are shown below.</p>
+            <p class="hero-actions">
+                <a href="information.html">Submit Another Inquiry</a>
+                <a href="index.html">Return Home</a>
+            </p>
         </section>
 
-        <section>
+        <section class="submission-summary">
             <h2>Submitted Information</h2>
             <dl id="submitted-info"></dl>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> S&#274;K Esthetics and Wellness</p>
+        <p>&copy; <span id="year"></span> S&#274;K Esthetics + Wellness</p>
         <p><a href="attributions.html">Attributions</a></p>
     </footer>
 </body>
