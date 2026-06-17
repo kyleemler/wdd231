@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lash services page for S&#274;K Esthetics + Wellness in Broken Arrow. Future lash providers can be featured here.">
+    <meta name="author" content="Kyle Emler">
+    <meta property="og:title" content="Lash Services | S&#274;K Esthetics + Wellness">
+    <meta property="og:description"
+        content="Learn about lash service availability and future lash appointments at S&#274;K Esthetics + Wellness in Broken Arrow.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/brand-wall.webp">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/lash-services.html">
+    <meta property="og:type" content="website">
+    <title>Lash Services | S&#274;K Esthetics + Wellness</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BeautySalon",
+                "@id": "https://kyleemler.github.io/wdd231/final/#business",
+                "name": "S\u0112K Esthetics + Wellness",
+                "url": "https://kyleemler.github.io/wdd231/final/",
+                "telephone": "+1-918-344-7959",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Broken Arrow",
+                    "addressRegion": "OK",
+                    "addressCountry": "US"
+                },
+                "openingHours": "By appointment",
+                "areaServed": "Broken Arrow, OK"
+            },
+            {
+                "@type": "Service",
+                "name": "Lash Services",
+                "serviceType": "Lash services",
+                "provider": {
+                    "@id": "https://kyleemler.github.io/wdd231/final/#business"
+                },
+                "areaServed": "Broken Arrow, OK",
+                "url": "https://kyleemler.github.io/wdd231/final/lash-services.html"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" aria-label="S&#274;K Esthetics + Wellness home">
+            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics + Wellness" width="96" height="54"
+                loading="lazy" decoding="async">
+        </a>
+        <p class="site-title">S&#274;K Esthetics + Wellness</p>
+        <button id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <details class="nav-dropdown">
+                        <summary>Services</summary>
+                        <ul>
+                            <li><a href="facial-services.html">Facial Services</a></li>
+                            <li><a href="waxing-services.html">Waxing Services</a></li>
+                            <li><a href="brow-services.html">Brow Services</a></li>
+                            <li><a href="lash-services.html" aria-current="page">Lash Services</a></li>
+                            <li><a href="massage-therapy.html">Massage Therapy</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="professionals.html">Professionals</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="room-rental.html">Room Rental</a></li>
+                <li><a href="information.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <img src="images/brand-wall.webp" alt="S&#274;K Esthetics + Wellness studio sign" width="1100" height="1400"
+                loading="lazy" decoding="async">
+            <div>
+                <p class="eyebrow">Lash services in Broken Arrow</p>
+                <h1>Lash service information for S&#274;K Esthetics + Wellness.</h1>
+                <p>This page is ready for lash services as new providers join the studio. When a lash professional is
+                    available, service details and booking links can be added here.</p>
+                <p class="hero-actions">
+                    <a href="professionals.html">View Current Providers</a>
+                    <a href="room-rental.html">Ask About a Room</a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2>Future Lash Appointments</h2>
+                <p>S&#274;K is built to support independent beauty professionals, including lash artists as room
+                    availability changes.</p>
+            </div>
+            <div class="service-details">
+                <article>
+                    <h3>Provider-Led Services</h3>
+                    <p>Each lash provider will manage her own service list, timing, pricing, and booking process.</p>
+                </article>
+                <article>
+                    <h3>Studio Setting</h3>
+                    <p>The studio offers private rooms and a clean setting for beauty appointments.</p>
+                </article>
+                <article>
+                    <h3>Room Rental</h3>
+                    <p>Lash artists interested in working from S&#274;K can use the room rental page to reach out.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> S&#274;K Esthetics + Wellness</p>
+    </footer>
+</body>
+
+</html>

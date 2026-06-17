@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Contact S&#274;K Esthetics + Wellness in Broken Arrow for appointments, esthetics services, beauty studio room rental, and general questions.">
+        content="Room rental information for beauty, esthetics, lash, brow, waxing, massage, and wellness professionals at S&#274;K Esthetics + Wellness in Broken Arrow.">
     <meta name="author" content="Kyle Emler">
-    <meta property="og:title" content="Information | S&#274;K Esthetics + Wellness">
+    <meta property="og:title" content="Room Rental | S&#274;K Esthetics + Wellness">
     <meta property="og:description"
-        content="Call, email, or request room rental information from S&#274;K Esthetics + Wellness in Broken Arrow, Oklahoma.">
-    <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/sek-esthetics.jpg">
-    <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/information.html">
+        content="Ask about beauty studio room rental at S&#274;K Esthetics + Wellness in Broken Arrow, Oklahoma.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/studio-lounge.webp">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/room-rental.html">
     <meta property="og:type" content="website">
-    <title>Information | S&#274;K Esthetics + Wellness</title>
+    <title>Room Rental | S&#274;K Esthetics + Wellness</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,38 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/site.css">
     <script src="scripts/site.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BeautySalon",
+                "@id": "https://kyleemler.github.io/wdd231/final/#business",
+                "name": "S\u0112K Esthetics + Wellness",
+                "url": "https://kyleemler.github.io/wdd231/final/",
+                "telephone": "+1-918-344-7959",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Broken Arrow",
+                    "addressRegion": "OK",
+                    "addressCountry": "US"
+                },
+                "openingHours": "By appointment",
+                "areaServed": "Broken Arrow, OK"
+            },
+            {
+                "@type": "Service",
+                "name": "Beauty Studio Room Rental",
+                "serviceType": "Room rental for beauty and wellness professionals",
+                "provider": {
+                    "@id": "https://kyleemler.github.io/wdd231/final/#business"
+                },
+                "areaServed": "Broken Arrow, OK",
+                "url": "https://kyleemler.github.io/wdd231/final/room-rental.html"
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -53,27 +85,29 @@
                 </li>
                 <li><a href="professionals.html">Professionals</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="room-rental.html">Room Rental</a></li>
-                <li><a href="information.html" aria-current="page">Information</a></li>
+                <li><a href="room-rental.html" aria-current="page">Room Rental</a></li>
+                <li><a href="information.html">Information</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="information-layout">
         <section class="page-intro">
-            <h1>Contact and Room Information</h1>
-            <p>Use the links below to ask about appointments, current beauty services, or room rental at S&#274;K.</p>
+            <p class="eyebrow">Room rental in Broken Arrow</p>
+            <h1>Room rental for beauty and wellness professionals.</h1>
+            <p>S&#274;K Esthetics + Wellness offers a clean studio setting for independent professionals who need room
+                rental for esthetics, brows, waxing, lashes, massage therapy, or related beauty services.</p>
             <ul class="contact-list">
                 <li><a href="tel:+19183447959">Call S&#274;K Esthetics + Wellness</a></li>
-                <li><a href="mailto:info@sekesthetics.com">Email S&#274;K Esthetics + Wellness</a></li>
-                <li><a href="professionals.html">Browse available services</a></li>
+                <li><a href="mailto:info@sekesthetics.com?subject=Room%20Rental%20Inquiry">Email About Room Rental</a></li>
+                <li><a href="index.html#professionals">View Current Professionals</a></li>
             </ul>
         </section>
 
         <section class="inquiry-section">
             <div class="section-heading">
-                <h2>Room Rental Inquiry</h2>
-                <p>Beauty and wellness professionals interested in renting a room can send a few details below.</p>
+                <h2>Ask About a Room</h2>
+                <p>Share a few details about your business and what kind of room you need.</p>
             </div>
 
             <form method="get" action="room-inquiry.html">

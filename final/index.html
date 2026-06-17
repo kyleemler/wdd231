@@ -22,6 +22,106 @@
     <link rel="stylesheet" href="styles/site.css">
     <script src="scripts/site.js" type="module"></script>
     <script src="scripts/home.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BeautySalon",
+                "@id": "https://kyleemler.github.io/wdd231/final/#business",
+                "name": "S\u0112K Esthetics + Wellness",
+                "url": "https://kyleemler.github.io/wdd231/final/",
+                "telephone": "+1-918-344-7959",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Broken Arrow",
+                    "addressRegion": "OK",
+                    "addressCountry": "US"
+                },
+                "openingHours": "By appointment",
+                "areaServed": "Broken Arrow, OK",
+                "makesOffer": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Facial Services",
+                            "serviceType": "Facials and skin care"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Waxing Services",
+                            "serviceType": "Waxing"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Brow Services",
+                            "serviceType": "Brow shaping and brow care"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Room Rental",
+                            "serviceType": "Room rental for beauty and wellness professionals"
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://kyleemler.github.io/wdd231/final/#website",
+                "name": "S\u0112K Esthetics + Wellness",
+                "url": "https://kyleemler.github.io/wdd231/final/"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://kyleemler.github.io/wdd231/final/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What services does S\u0112K Esthetics & Wellness offer?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "S\u0112K Esthetics + Wellness offers access to independent beauty professionals for services such as facials, brow services, waxing, lash services, massage therapy, and room rental for beauty and wellness professionals as providers are available."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Where is S\u0112K Esthetics & Wellness located?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "S\u0112K Esthetics + Wellness is located in Broken Arrow, Oklahoma."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do I book an appointment?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Choose a professional from the Meet the Girls section and use her direct booking link to request an appointment."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What areas do you serve?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "S\u0112K Esthetics + Wellness serves clients in Broken Arrow and nearby Tulsa-area communities."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -40,7 +140,21 @@
         <nav id="primary-navigation">
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
+                <li>
+                    <details class="nav-dropdown">
+                        <summary>Services</summary>
+                        <ul>
+                            <li><a href="facial-services.html">Facial Services</a></li>
+                            <li><a href="waxing-services.html">Waxing Services</a></li>
+                            <li><a href="brow-services.html">Brow Services</a></li>
+                            <li><a href="lash-services.html">Lash Services</a></li>
+                            <li><a href="massage-therapy.html">Massage Therapy</a></li>
+                        </ul>
+                    </details>
+                </li>
                 <li><a href="professionals.html">Professionals</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="room-rental.html">Room Rental</a></li>
                 <li><a href="information.html">Information</a></li>
             </ul>
         </nav>
@@ -165,12 +279,37 @@
                 <li><a href="professionals.html">Browse available services</a></li>
             </ul>
         </section>
+
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="section-heading">
+                <p class="eyebrow">Frequently asked questions</p>
+                <h2 id="faq-heading">Planning a visit to S&#274;K?</h2>
+            </div>
+            <div class="faq-list">
+                <article>
+                    <h3>What services does S&#274;K Esthetics &amp; Wellness offer?</h3>
+                    <p>S&#274;K is home to independent beauty professionals offering services such as facials, brows,
+                        waxing, lash services, massage therapy, and room rental as providers are available.</p>
+                </article>
+                <article>
+                    <h3>Where is S&#274;K Esthetics &amp; Wellness located?</h3>
+                    <p>S&#274;K Esthetics + Wellness is located in Broken Arrow, Oklahoma.</p>
+                </article>
+                <article>
+                    <h3>How do I book an appointment?</h3>
+                    <p>Choose a professional from the Meet the Girls section and use her direct booking link to request
+                        an appointment.</p>
+                </article>
+                <article>
+                    <h3>What areas do you serve?</h3>
+                    <p>S&#274;K serves clients in Broken Arrow and nearby Tulsa-area communities.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> S&#274;K Esthetics + Wellness</p>
-        <p><a href="attributions.html">Attributions</a></p>
-        <p><a href="https://www.loom.com/share/997efc22ed9d4eebb26903a6f433b339">Video Demonstration</a></p>
     </footer>
 </body>
 

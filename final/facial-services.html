@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Facial services in Broken Arrow at S&#274;K Esthetics + Wellness. Book skin care appointments with independent esthetics professionals.">
+    <meta name="author" content="Kyle Emler">
+    <meta property="og:title" content="Facial Services | S&#274;K Esthetics + Wellness">
+    <meta property="og:description"
+        content="Learn about facial services, skin care appointments, and esthetics providers at S&#274;K Esthetics + Wellness in Broken Arrow.">
+    <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/beauty-tools.webp">
+    <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/facial-services.html">
+    <meta property="og:type" content="website">
+    <title>Facial Services | S&#274;K Esthetics + Wellness</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" type="module"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BeautySalon",
+                "@id": "https://kyleemler.github.io/wdd231/final/#business",
+                "name": "S\u0112K Esthetics + Wellness",
+                "url": "https://kyleemler.github.io/wdd231/final/",
+                "telephone": "+1-918-344-7959",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Broken Arrow",
+                    "addressRegion": "OK",
+                    "addressCountry": "US"
+                },
+                "openingHours": "By appointment",
+                "areaServed": "Broken Arrow, OK"
+            },
+            {
+                "@type": "Service",
+                "name": "Facial Services",
+                "serviceType": "Facials and skin care",
+                "provider": {
+                    "@id": "https://kyleemler.github.io/wdd231/final/#business"
+                },
+                "areaServed": "Broken Arrow, OK",
+                "url": "https://kyleemler.github.io/wdd231/final/facial-services.html"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" aria-label="S&#274;K Esthetics + Wellness home">
+            <img src="images/sek-esthetics-logo.svg" alt="S&#274;K Esthetics + Wellness" width="96" height="54"
+                loading="lazy" decoding="async">
+        </a>
+        <p class="site-title">S&#274;K Esthetics + Wellness</p>
+        <button id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
+            aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <details class="nav-dropdown">
+                        <summary>Services</summary>
+                        <ul>
+                            <li><a href="facial-services.html" aria-current="page">Facial Services</a></li>
+                            <li><a href="waxing-services.html">Waxing Services</a></li>
+                            <li><a href="brow-services.html">Brow Services</a></li>
+                            <li><a href="lash-services.html">Lash Services</a></li>
+                            <li><a href="massage-therapy.html">Massage Therapy</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="professionals.html">Professionals</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="room-rental.html">Room Rental</a></li>
+                <li><a href="information.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <img src="images/beauty-tools.webp" alt="Skin care tools for facial services" width="1000" height="1300"
+                loading="lazy" decoding="async">
+            <div>
+                <p class="eyebrow">Facial services in Broken Arrow</p>
+                <h1>Skin care appointments at S&#274;K Esthetics + Wellness.</h1>
+                <p>Facial services are available through independent esthetics professionals inside S&#274;K. Each
+                    provider manages her own schedule, service menu, and booking details.</p>
+                <p class="hero-actions">
+                    <a href="index.html#professionals">Book a Facial</a>
+                    <a href="professionals.html">Meet the Providers</a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2>What to Expect</h2>
+                <p>Facial appointments may focus on hydration, glow, skin maintenance, texture, or a simple reset for
+                    your skin.</p>
+            </div>
+            <div class="service-details">
+                <article>
+                    <h3>Skin Care Goals</h3>
+                    <p>Talk with your provider about what your skin needs right now and what kind of result you want.</p>
+                </article>
+                <article>
+                    <h3>Provider-Led Care</h3>
+                    <p>Each esthetician offers her own approach, products, and recommendations.</p>
+                </article>
+                <article>
+                    <h3>Easy Booking</h3>
+                    <p>Use the professional cards on the home page to request an appointment directly.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="service-cta">
+            <h2>Ready to book a facial?</h2>
+            <p>Choose Sarah, McKenzie, Reagan, or another provider as the studio grows.</p>
+            <p class="hero-actions"><a href="index.html#professionals">Find a Provider</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> S&#274;K Esthetics + Wellness</p>
+    </footer>
+</body>
+
+</html>
