@@ -3,135 +3,27 @@
         "name": "Sarah",
         "business": "Skin by Sarah",
         "specialties": ["Facials", "Waxing", "Brows"],
-        "summary": "Customized esthetic services focused on skin care, brows, and waxing.",
-        "details": "Skin by Sarah offers facial treatments, brow services, waxing, and related esthetic services in a quiet spa setting.",
+        "summary": "Facials, brow services, and waxing with a simple, skin-focused approach.",
+        "details": "Skin by Sarah offers facials, brow services, waxing, and esthetics appointments at S\u0112K Esthetics + Wellness in Broken Arrow.",
         "linkText": "Request an appointment",
         "linkUrl": "mailto:info@sekesthetics.com?subject=Skin%20by%20Sarah%20Appointment"
     },
     {
-        "name": "Maddie",
-        "business": "Luna Glow Esthetics",
-        "specialties": ["Facials", "Dermaplaning", "Peels"],
-        "summary": "Skin care services focused on brightening, smoothing, and helping clients feel refreshed.",
-        "details": "Luna Glow Esthetics offers facials, dermaplaning, light chemical peels, and skin care consultations for clients who want a polished, healthy glow.",
+        "name": "McKenzie",
+        "business": "McKenzie Esthetics",
+        "specialties": ["Facials", "Waxing", "Brows"],
+        "summary": "Esthetics services for clients looking for facials, brows, and waxing.",
+        "details": "McKenzie Esthetics offers facials, brow services, waxing, and esthetics appointments at S\u0112K Esthetics + Wellness in Broken Arrow.",
         "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Luna%20Glow%20Esthetics%20Appointment"
+        "linkUrl": "mailto:info@sekesthetics.com?subject=McKenzie%20Esthetics%20Appointment"
     },
     {
-        "name": "Claire",
-        "business": "Claire's Massage Studio",
-        "specialties": ["Massage Therapy", "Relaxation Massage", "Deep Tissue"],
-        "summary": "Therapeutic massage for relaxation, tension relief, and restorative body care.",
-        "details": "Claire's Massage Studio offers relaxation massage, deep tissue work, and customized sessions for clients looking to reduce stress and support overall wellness.",
+        "name": "Reagan",
+        "business": "Esthetics by Rae",
+        "specialties": ["Facials", "Waxing", "Brows"],
+        "summary": "Facials, waxing, and brow appointments inside S\u0112K Esthetics + Wellness.",
+        "details": "Esthetics by Rae offers facials, brow services, waxing, and esthetics appointments at S\u0112K Esthetics + Wellness in Broken Arrow.",
         "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Claire%27s%20Massage%20Studio%20Appointment"
-    },
-    {
-        "name": "Brielle",
-        "business": "Polished Pearl Nail Co.",
-        "specialties": ["Nails", "Gel Manicures", "Nail Art"],
-        "summary": "Detailed nail services with a soft, clean, and elevated finish.",
-        "details": "Polished Pearl Nail Co. offers gel manicures, structured manicures, nail art, and detail-focused nail care by appointment.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Polished%20Pearl%20Nail%20Appointment"
-    },
-    {
-        "name": "Tessa",
-        "business": "Velvet Wink Lash Lounge",
-        "specialties": ["Lashes", "Lash Extensions", "Lash Lifts", "Tinting"],
-        "summary": "Lash services designed for soft definition, fuller looks, and low-maintenance beauty.",
-        "details": "Velvet Wink Lash Lounge offers lash extensions, lash lifts, tinting, and customized lash looks for clients who want polished everyday eyes.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Velvet%20Wink%20Lash%20Appointment"
-    },
-    {
-        "name": "Avery",
-        "business": "Brow House BA",
-        "specialties": ["Brows", "Brow Lamination", "Tinting"],
-        "summary": "Brow shaping and tinting services for clean, natural definition.",
-        "details": "Brow House BA provides brow shaping, lamination, tinting, and maintenance appointments for clients who want balanced brows that fit their features.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Brow%20House%20BA%20Appointment"
-    },
-    {
-        "name": "Jenna",
-        "business": "Bare & Bright Waxing",
-        "specialties": ["Waxing", "Body Waxing", "Bikini Waxing"],
-        "summary": "Efficient waxing appointments with careful preparation and aftercare guidance.",
-        "details": "Bare & Bright Waxing offers facial and body waxing services with attention to comfort, sanitation, and smooth results.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Bare%20and%20Bright%20Waxing%20Appointment"
-    },
-    {
-        "name": "Morgan",
-        "business": "Restore Wellness Room",
-        "specialties": ["Wellness Consultations", "Aromatherapy", "Relaxation Massage"],
-        "summary": "Wellness support for clients seeking calmer routines and restorative appointments.",
-        "details": "Restore Wellness Room offers aromatherapy-focused sessions, wellness consultations, and relaxation services to support stress management and self-care.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Restore%20Wellness%20Room%20Appointment"
-    },
-    {
-        "name": "Elena",
-        "business": "Golden Hour Skincare",
-        "specialties": ["Facials", "Acne Care", "Hydration Treatments"],
-        "summary": "Goal-focused skin care for hydration, breakouts, and maintenance.",
-        "details": "Golden Hour Skincare offers customized facials, acne-support appointments, and hydration treatments for clients building consistent skin care routines.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Golden%20Hour%20Skincare%20Appointment"
-    },
-    {
-        "name": "Nora",
-        "business": "Soft Set Lash Studio",
-        "specialties": ["Lashes", "Classic Lash Extensions", "Lash Fills"],
-        "summary": "Classic lash sets and fills with a soft, wearable finish.",
-        "details": "Soft Set Lash Studio provides classic lash extensions, lash fills, and lash care guidance for clients who prefer natural-looking definition.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Soft%20Set%20Lash%20Studio%20Appointment"
-    },
-    {
-        "name": "Paige",
-        "business": "The Calm Table",
-        "specialties": ["Massage Therapy", "Prenatal Massage", "Deep Tissue"],
-        "summary": "Supportive massage appointments for relaxation, recovery, and prenatal comfort.",
-        "details": "The Calm Table offers prenatal massage, deep tissue sessions, and relaxation-focused bodywork in a peaceful appointment setting.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=The%20Calm%20Table%20Appointment"
-    },
-    {
-        "name": "Lily",
-        "business": "Petal Polish Studio",
-        "specialties": ["Nails", "Pedicures", "Gel Manicures"],
-        "summary": "Fresh manicures and pedicures with clean shaping and seasonal colors.",
-        "details": "Petal Polish Studio offers gel manicures, pedicures, polish changes, and simple nail art for clients who want a neat, finished look.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Petal%20Polish%20Studio%20Appointment"
-    },
-    {
-        "name": "Harper",
-        "business": "Clear Canvas Esthetics",
-        "specialties": ["Facials", "Peels", "Acne Care"],
-        "summary": "Esthetic treatments for smoother texture, clearer pores, and brighter skin.",
-        "details": "Clear Canvas Esthetics provides facial treatments, light peels, and acne care support for clients who want practical skin improvement plans.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Clear%20Canvas%20Esthetics%20Appointment"
-    },
-    {
-        "name": "Sofia",
-        "business": "Modern Muse Beauty",
-        "specialties": ["Makeup", "Brows", "Lashes"],
-        "summary": "Beauty services for everyday polish, events, and photo-ready appointments.",
-        "details": "Modern Muse Beauty offers makeup appointments, brow shaping, and lash services for clients preparing for events or refreshing their everyday routine.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Modern%20Muse%20Beauty%20Appointment"
-    },
-    {
-        "name": "Grace",
-        "business": "Balance Bodywork",
-        "specialties": ["Massage Therapy", "Sports Massage", "Deep Tissue"],
-        "summary": "Focused bodywork for active clients, muscle tension, and recovery support.",
-        "details": "Balance Bodywork offers sports massage, deep tissue sessions, and targeted massage appointments for clients managing soreness or recurring tension.",
-        "linkText": "Request an appointment",
-        "linkUrl": "mailto:info@sekesthetics.com?subject=Balance%20Bodywork%20Appointment"
+        "linkUrl": "mailto:info@sekesthetics.com?subject=Esthetics%20by%20Rae%20Appointment"
     }
 ]

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="S&#274;K Esthetics + Wellness connects clients with esthetics and wellness professionals in Broken Arrow, Oklahoma.">
+        content="S&#274;K Esthetics + Wellness is a Broken Arrow esthetics studio for facials, brows, waxing, beauty appointments, and room rental inquiries.">
     <meta name="author" content="Kyle Emler">
     <meta property="og:title" content="S&#274;K Esthetics + Wellness">
     <meta property="og:description"
-        content="Meet esthetics and wellness professionals serving clients at S&#274;K Esthetics + Wellness in Broken Arrow, Oklahoma.">
+        content="Book facials, brows, waxing, and beauty services with independent professionals at S&#274;K Esthetics + Wellness in Broken Arrow, Oklahoma.">
     <meta property="og:image" content="https://kyleemler.github.io/wdd231/final/images/sek-esthetics.jpg">
     <meta property="og:url" content="https://kyleemler.github.io/wdd231/final/index.html">
     <meta property="og:type" content="website">
@@ -47,31 +47,118 @@
     </header>
 
     <main>
-        <section class="hero">
-            <img src="images/lobby-hero.webp" alt="Reception area at S&#274;K Esthetics + Wellness" width="1400"
-                height="788" loading="lazy" decoding="async">
+        <section class="hero home-hero">
+            <div class="hero-image-wrap">
+                <img src="images/brand-wall.webp" alt="S&#274;K Esthetics + Wellness logo wall" width="1100"
+                    height="1400" loading="eager" decoding="async">
+            </div>
             <div class="hero-content">
-                <h1>Beauty and wellness in one calm space.</h1>
+                <p class="eyebrow">Broken Arrow beauty studio</p>
+                <h1>Facials, brows, waxing, and space for independent beauty pros.</h1>
                 <p>
-                    Explore services, meet the professionals, and find the right appointment for your skin,
-                    beauty, and wellness goals.
+                    S&#274;K Esthetics + Wellness is home to estheticians and beauty professionals serving clients in
+                    Broken Arrow. Book directly with the provider who fits what you need.
                 </p>
                 <p class="hero-actions">
-                    <a href="professionals.html">Meet the Professionals</a>
-                    <a href="information.html">Get Room Information</a>
+                    <a href="#professionals">Book an Appointment</a>
+                    <a href="information.html">Room Information</a>
                 </p>
             </div>
         </section>
 
-        <section id="professionals" class="service-finder">
-            <h2>Find a Service</h2>
-            <p>Choose a service type to see professionals who may be a good fit.</p>
-            <div id="service-filters" role="group" aria-label="Filter professionals by service type"></div>
-            <div id="professional-cards"></div>
+        <section class="home-intro" aria-label="Studio highlights">
+            <div>
+                <p class="eyebrow">Why clients come here</p>
+                <h2>A clean, welcoming studio where appointments feel personal.</h2>
+            </div>
+            <ul>
+                <li>
+                    <span>01</span>
+                    <strong>Focused appointments</strong>
+                    <p>Appointments are one-on-one, so there is time to talk through your Health and Wellness
+                        goals.</p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <strong>Independent professionals</strong>
+                    <p>Each business books separately, but everyone works from the same clean Broken Arrow studio.</p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <strong>Simple next steps</strong>
+                    <p>Find a provider, book an appointment, then sit back and enjoy yourself.</p>
+                    <a class="small-action" href="#professionals">Find a Provider</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="studio-story">
+            <picture>
+                <source srcset="images/studio-lounge-small.webp 800w, images/studio-lounge.webp 1600w"
+                    sizes="(min-width: 900px) 52vw, 100vw" type="image/webp">
+                <img src="images/studio-lounge.webp" alt="Soft seating and mirror inside S&#274;K Esthetics + Wellness"
+                    width="1600" height="1100" loading="lazy" decoding="async">
+            </picture>
+            <div>
+                <p class="eyebrow">Inside S&#274;K</p>
+                <h2>A comfortable place for skin care, brows, waxing, and beauty appointments.</h2>
+                <p>
+                    Clients can expect soft seating, natural light, clean treatment rooms, and a simple check-in
+                    experience. Beauty professionals get a studio setting that feels ready for real clients.
+                </p>
+            </div>
+        </section>
+
+        <section id="professionals" class="professional-highlights">
+            <div class="section-heading">
+                <p class="eyebrow">Book with a professional</p>
+                <h2>Meet the Girls</h2>
+                <p>Each provider handles her own schedule. Choose a business below to request an appointment.</p>
+            </div>
+            <div id="professional-cards" class="professional-card-grid" data-card-mode="booking"></div>
+        </section>
+
+        <section class="studio-info">
+            <div class="studio-info-layout">
+                <div>
+                    <div class="section-heading">
+                        <p class="eyebrow">What you will find here</p>
+                        <h2>Beauty services for clients and room rental options for professionals.</h2>
+                        <p>Whether you are booking a facial or looking for a room to grow your beauty business, S&#274;K
+                            keeps the next step simple.</p>
+                    </div>
+                    <div class="info-preview-grid">
+                        <article>
+                            <span>Appointments</span>
+                            <h3>Book Directly</h3>
+                            <p>Choose Sarah, McKenzie, Reagan, or another provider as the studio grows.</p>
+                        </article>
+                        <article>
+                            <span>Services</span>
+                            <h3>Facials, Brows + Waxing</h3>
+                            <p>Current services focus on esthetics, with room for more beauty and wellness offerings.</p>
+                        </article>
+                        <article>
+                            <span>Rooms</span>
+                            <h3>Room Rental</h3>
+                            <p>Beauty professionals can ask about available rooms, amenities, and studio expectations.</p>
+                        </article>
+                    </div>
+                </div>
+                <figure>
+                    <img src="images/beauty-tools.webp" alt="Beauty tools arranged on a gold mirror" width="1000"
+                        height="1300" loading="lazy" decoding="async">
+                    <figcaption>Esthetics, beauty services, and room rental information in one place.</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section id="information" class="info-links">
-            <h2>Information</h2>
+            <div>
+                <p class="eyebrow">Questions or room inquiries</p>
+                <h2>Get in touch with S&#274;K Esthetics + Wellness.</h2>
+                <p>Call, email, browse services, or request information about room rental in Broken Arrow.</p>
+            </div>
             <ul>
                 <li><a href="tel:+19183447959">Call S&#274;K Esthetics + Wellness</a></li>
                 <li><a href="mailto:info@sekesthetics.com">Email S&#274;K Esthetics + Wellness</a></li>
@@ -79,11 +166,6 @@
             </ul>
         </section>
     </main>
-
-    <dialog id="professional-modal">
-        <button id="modal-close" type="button">Close</button>
-        <div id="modal-content"></div>
-    </dialog>
 
     <footer>
         <p>&copy; <span id="year"></span> S&#274;K Esthetics + Wellness</p>

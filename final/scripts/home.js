@@ -9,24 +9,24 @@ const modalClose = document.querySelector("#modal-close");
 
 async function getProfessionals() {
     try {
-        const [professionalsResponse, categoriesResponse] = await Promise.all([
-            fetch("data/professionals.json"),
-            fetch("data/categories.json")
-        ]);
+        const professionalsResponse = await fetch("data/professionals.json");
 
         if (!professionalsResponse.ok) {
             throw new Error(`Unable to load professional data: ${professionalsResponse.status}`);
         }
 
-        if (!categoriesResponse.ok) {
-            throw new Error(`Unable to load category data: ${categoriesResponse.status}`);
-        }
-
         professionals = await professionalsResponse.json();
-        serviceCategories = await categoriesResponse.json();
-        displayServiceFilters();
 
-        if (!serviceFilters) {
+        if (serviceFilters) {
+            const categoriesResponse = await fetch("data/categories.json");
+
+            if (!categoriesResponse.ok) {
+                throw new Error(`Unable to load category data: ${categoriesResponse.status}`);
+            }
+
+            serviceCategories = await categoriesResponse.json();
+            displayServiceFilters();
+        } else {
             displayProfessionals(professionals);
         }
     } catch (error) {
@@ -37,6 +37,19 @@ async function getProfessionals() {
 
 function createProfessionalCard(professional) {
     const card = document.createElement("article");
+    const bookingMode = cardsContainer.dataset.cardMode === "booking";
+
+    if (professional.image) {
+        const image = document.createElement("img");
+        image.src = professional.image;
+        image.alt = professional.imageAlt || `${professional.name} of ${professional.business}`;
+        image.width = professional.imageWidth || 800;
+        image.height = professional.imageHeight || 1000;
+        image.loading = "lazy";
+        image.decoding = "async";
+        image.className = "professional-card-image";
+        card.appendChild(image);
+    }
 
     const heading = document.createElement("h3");
     heading.textContent = professional.business;
@@ -54,12 +67,21 @@ function createProfessionalCard(professional) {
         specialtyList.appendChild(item);
     });
 
+    const bookingLink = document.createElement("a");
+    bookingLink.href = professional.linkUrl;
+    bookingLink.textContent = bookingMode ? "Book Directly" : professional.linkText;
+
+    if (bookingMode) {
+        card.append(heading, name, summary, specialtyList, bookingLink);
+        return card;
+    }
+
     const detailsButton = document.createElement("button");
     detailsButton.type = "button";
     detailsButton.textContent = "View Details";
     detailsButton.addEventListener("click", () => openProfessionalModal(professional));
 
-    card.append(heading, name, summary, specialtyList, detailsButton);
+    card.append(heading, name, summary, specialtyList, bookingLink, detailsButton);
     return card;
 }
 
@@ -168,9 +190,11 @@ function displayProfessionalError() {
     cardsContainer.appendChild(message);
 }
 
-if (cardsContainer && modal && modalContent && modalClose) {
+if (cardsContainer) {
     getProfessionals();
+}
 
+if (modal && modalContent && modalClose) {
     modalClose.addEventListener("click", () => {
         modal.close();
     });
